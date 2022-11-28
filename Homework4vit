@@ -1,0 +1,38 @@
+def sum_to_n(n):
+    final_sum = 0
+    for x in range (n + 1):
+        final_sum = final_sum + x
+    return final_sum
+
+
+test_n = 5
+test_result = sum_to_n(test_n)
+print(test_result)
+
+
+def sum_to_n_v2(n):
+    final_sum = (n * (n + 1)) / 2
+    return final_sum
+
+
+test_n = 5
+test_result = sum_to_n_v2(test_n)
+print(test_result)
+
+test_result_v2 = sum_to_n_v2(test_n)
+print(test_result_v2)
+
+
+def find_max(a,b,c):
+    if a > b and a > c:
+        return a
+    if b > a and b > c:
+        return b
+    return c
+
+
+test_a = 124
+test_b = 27
+test_c = 8
+test_result = find_max(test_a, test_b, test_c)
+print(test_result)
